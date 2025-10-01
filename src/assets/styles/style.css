@@ -37,3 +37,90 @@ main {
   border-radius: 22px;
   box-shadow: 5px 5px 10px #0000008f;
 }
+
+.location-input {
+  display: flex;
+  align-items: center;
+  margin: 1.35rem 0 0 1rem;
+}
+
+.search-input {
+  width: 100%;
+  display: flex;
+}
+
+label {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#locationSearch {
+  width: 75%;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid #0a0a0a;
+  background: #e0dbe0;
+  border-radius: 20px;
+  font-size: 16px;
+  transition: all 0.3s ease-in;
+}
+
+#locationSearch::placeholder {
+  font-weight: 600;
+}
+
+#locationSearch:focus {
+  border: 2px solid #3091ff;
+  outline: none;
+}
+
+#searchBtn {
+  width: 40px;
+  height: 40px;
+  margin-left: 0.5rem;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #e0dbe0;
+  border: 1px solid #0a0a0a;
+  transition: all 0.3s ease;
+}
+
+#searchBtn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.25);
+}
+
+#searchBtn:active {
+  opacity: 0.6;
+}
+
+@media (min-width: 280px) and (max-width: 420px) {
+  .weather-container {
+    width: 90%;
+  }
+
+  .search-input {
+    justify-content: center;
+  }
+
+  .location-input {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6rem 0 0 0;
+  }
+
+  #locationSearch {
+    width: 75%;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 768px) {
+  .weather-container {
+    width: 85%;
+  }
+}

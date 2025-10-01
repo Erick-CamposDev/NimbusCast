@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Author" content="Erick Campos" />
+    <!-- BOOSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <!-- FAVICON -->
     <link
       rel="shortcut icon"
@@ -28,7 +33,26 @@
       </div>
     </header>
     <main>
-      <section class="weather-container"></section>
+      <section class="weather-container">
+        <div class="location-input">
+          <label for="locationSearch"
+            ><i class="bi bi-geo-alt-fill"></i>
+            <p>Localização:</p>
+          </label>
+          <div class="search-input">
+            <input
+              type="text"
+              name="city"
+              id="locationSearch"
+              placeholder="Digite a cidade"
+              autocomplete="off"
+            />
+            <button id="searchBtn" onclick="searchCity()">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <script src="src/assets/js/script.js"></script>
