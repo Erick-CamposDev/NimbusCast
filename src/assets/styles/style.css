@@ -92,6 +92,7 @@ label {
 #searchBtn:hover {
   transform: scale(1.05);
   filter: brightness(1.25);
+  box-shadow: 2px 2px 10px #00000088;
 }
 
 #searchBtn:active {
