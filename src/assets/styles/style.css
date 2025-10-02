@@ -1,6 +1,6 @@
 body {
   background: url("/src/assets/imgs/clouds.png");
-  height: 115vh;
+  height: 120vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,7 +32,7 @@ main {
   flex-direction: column;
   margin-top: 1.5rem;
   width: 45%;
-  height: 560px;
+  height: 600px;
   background: #fafafa65;
   border: 2px solid #ffffff70;
   backdrop-filter: blur(6px);
@@ -160,6 +160,53 @@ label {
   animation: spin 0.7s linear infinite;
 }
 
+.other-infos {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 1rem;
+}
+
+.info-row {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.info-container {
+  background: #fff7f7;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  height: 75px;
+  border-radius: 22px;
+  border: 2px solid #00000081;
+  box-shadow: 5px 5px 10px #00000065;
+}
+
+.other-info-img {
+  width: 70px;
+  height: 70px;
+}
+
+.other-info-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.other-info-txt > h3 {
+  font-size: 15px;
+}
+
+.other-info-txt > p {
+  font-size: 15px;
+  font-weight: 700;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0);
@@ -210,6 +257,45 @@ label {
   .weather-text > p {
     font-size: 16px;
   }
+
+  .other-info-txt > h3 {
+    font-size: 11px;
+  }
+
+  .other-info-txt > p {
+    font-size: 11px;
+  }
+
+  .info-container {
+    width: 48%;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 340px) {
+  .info-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.65rem;
+  }
+
+  .weather-container {
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+  .info-container {
+    width: 75%;
+  }
+
+  .other-info-txt > h3 {
+    font-size: 13px;
+  }
+
+  .other-info-txt > p {
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 420px) and (max-width: 700px) {
@@ -240,5 +326,19 @@ label {
   body {
     height: 100vh;
     overflow: hidden;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 540px) {
+  .other-info-txt > h3 {
+    font-size: 13px;
+  }
+
+  .other-info-txt > p {
+    font-size: 13px;
+  }
+
+  .info-container {
+    width: 47%;
   }
 }

@@ -19,3 +19,11 @@ label {
 .weather-text {
   font-family: "Lato";
 }
+
+.other-info-txt > h3 {
+  font-family: "Poppins";
+}
+
+.other-info-txt > p {
+  font-family: "Lato";
+}
