@@ -1,6 +1,6 @@
 body {
   background: url("/src/assets/imgs/clouds.png");
-  height: 100vh;
+  height: 110vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,9 +28,11 @@ main {
 }
 
 .weather-container {
+  display: flex;
+  flex-direction: column;
   margin-top: 1.5rem;
   width: 45%;
-  height: 475px;
+  height: 535px;
   background: #fafafa65;
   border: 2px solid #ffffff70;
   backdrop-filter: blur(6px);
@@ -97,6 +99,75 @@ label {
 
 #searchBtn:active {
   opacity: 0.6;
+}
+
+.city-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  color: #fafafa;
+  gap: 1rem;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to right,
+    #72b4ff 0%,
+    #5193df 25%,
+    #346fb3 50%,
+    #235b9b 75%,
+    #15467e 100%
+  );
+  width: 95%;
+  margin: 1rem 0 0 1rem;
+  border-radius: 18px;
+  box-shadow: 6px 6px 12px #0000008f;
+}
+
+.weather-img {
+  width: 50%;
+  height: 250px;
+}
+
+.weather-text {
+  display: flex;
+  flex-direction: column;
+  color: #fafafa;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.weather-text > p {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.weather-info > h2 {
+  font-size: 32px;
+  color: #fafafa;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fafafa;
+  border-top: 2px solid #0a53a7;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (min-width: 280px) and (max-width: 420px) {

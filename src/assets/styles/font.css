@@ -11,3 +11,11 @@ label {
 #locationSearch::placeholder {
   font-family: "Poppins";
 }
+
+.city-name > h1 {
+  font-family: "Lato";
+}
+
+.weather-text {
+  font-family: "Lato";
+}
