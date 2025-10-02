@@ -1,6 +1,6 @@
 body {
   background: url("/src/assets/imgs/clouds.png");
-  height: 110vh;
+  height: 115vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,7 +32,7 @@ main {
   flex-direction: column;
   margin-top: 1.5rem;
   width: 45%;
-  height: 535px;
+  height: 560px;
   background: #fafafa65;
   border: 2px solid #ffffff70;
   backdrop-filter: blur(6px);
@@ -172,7 +172,7 @@ label {
 
 @media (min-width: 280px) and (max-width: 420px) {
   .weather-container {
-    width: 90%;
+    width: 95%;
   }
 
   .search-input {
@@ -189,10 +189,56 @@ label {
   #locationSearch {
     width: 75%;
   }
+
+  .weather-info {
+    width: 90%;
+  }
+
+  .weather-img {
+    width: 50%;
+    height: 200px;
+  }
+
+  .city-name > h1 {
+    font-size: 28px;
+  }
+
+  .weather-text > h2 {
+    font-size: 20px;
+  }
+
+  .weather-text > p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 700px) {
+  .weather-info {
+    width: 93%;
+  }
 }
 
 @media (min-width: 420px) and (max-width: 768px) {
   .weather-container {
     width: 85%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .weather-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .weather-container {
+    padding-right: 0.75rem;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 768px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
   }
 }
