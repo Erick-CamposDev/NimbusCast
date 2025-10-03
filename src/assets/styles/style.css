@@ -249,7 +249,7 @@ footer {
 
 @media (min-width: 280px) and (max-width: 420px) {
   body {
-    height: 100vh;
+    height: 125vh;
   }
 
   .weather-container {
@@ -278,6 +278,7 @@ footer {
   .weather-img {
     width: 50%;
     height: 200px;
+    margin-right: 1.5rem;
   }
 
   .city-name > h1 {
@@ -341,6 +342,10 @@ footer {
 @media (min-width: 420px) and (max-width: 768px) {
   .weather-container {
     width: 85%;
+  }
+
+  .weather-img {
+    margin-right: 1rem;
   }
 }
 
