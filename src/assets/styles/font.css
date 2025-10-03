@@ -12,6 +12,10 @@ label {
   font-family: "Poppins";
 }
 
+#messages {
+  font-family: "Poppins";
+}
+
 .city-name > h1 {
   font-family: "Lato";
 }

@@ -102,10 +102,19 @@ label {
   opacity: 0.6;
 }
 
+#messages {
+  padding: 2rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+}
+
 .city-name,
 .weather-info,
 .other-infos {
-  display: flex;
+  display: none;
 }
 
 .city-name {
