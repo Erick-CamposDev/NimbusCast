@@ -143,8 +143,9 @@ label {
 }
 
 .weather-img {
-  width: 50%;
+  width: 45%;
   height: 250px;
+  margin-right: 4rem;
 }
 
 .weather-text {
@@ -153,6 +154,10 @@ label {
   color: #fafafa;
   align-items: center;
   gap: 0.5rem;
+}
+
+.weather-text > h2 {
+  font-size: 35px;
 }
 
 .weather-text > p {
