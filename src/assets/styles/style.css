@@ -32,7 +32,8 @@ main {
   flex-direction: column;
   margin-top: 1.5rem;
   width: 45%;
-  height: 600px;
+  height: auto;
+  padding-bottom: 1rem;
   background: #fafafa65;
   border: 2px solid #ffffff70;
   backdrop-filter: blur(6px);
@@ -101,8 +102,13 @@ label {
   opacity: 0.6;
 }
 
+.city-name,
+.weather-info,
+.other-infos {
+  display: none;
+}
+
 .city-name {
-  display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
@@ -111,7 +117,6 @@ label {
 }
 
 .weather-info {
-  display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(
@@ -161,7 +166,6 @@ label {
 }
 
 .other-infos {
-  display: flex;
   flex-direction: column;
   height: 100%;
   padding-top: 1rem;
@@ -184,6 +188,7 @@ label {
   border-radius: 22px;
   border: 2px solid #00000081;
   box-shadow: 5px 5px 10px #00000065;
+  margin-bottom: 1.5rem;
 }
 
 .other-info-img {
@@ -319,6 +324,12 @@ label {
 @media (min-width: 1024px) {
   .weather-container {
     padding-right: 0.75rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .weather-container {
+    width: 35%;
   }
 }
 
