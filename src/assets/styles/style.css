@@ -1,6 +1,6 @@
 body {
   background: url("/src/assets/imgs/clouds.png");
-  height: 120vh;
+  height: 135vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,7 +105,7 @@ label {
 .city-name,
 .weather-info,
 .other-infos {
-  display: none;
+  display: flex;
 }
 
 .city-name {
@@ -212,6 +212,17 @@ label {
   font-weight: 700;
 }
 
+footer {
+  margin: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #0a0a0a;
+  font-weight: 600;
+  font-style: italic;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0);
@@ -223,6 +234,10 @@ label {
 }
 
 @media (min-width: 280px) and (max-width: 420px) {
+  body {
+    height: 100vh;
+  }
+
   .weather-container {
     width: 95%;
   }
@@ -333,10 +348,9 @@ label {
   }
 }
 
-@media (min-width: 280px) and (max-width: 768px) {
+@media (min-width: 420px) and (max-width: 768px) {
   body {
     height: 100vh;
-    overflow: hidden;
   }
 }
 
