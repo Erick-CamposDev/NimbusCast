@@ -23,10 +23,12 @@ const otherInfos = document.querySelector(".other-infos");
 //TEXTO DE INFORMAÇÕES ADICIONAIS
 const otherInfoTxt = document.querySelectorAll(".info-txt");
 
+//FUNÇÃO DE CARREGAMENTO
 function loadingCity() {
   loading.style.display = "flex";
 }
 
+//FUNÇÃO ASSÍNCRONA PARA BUSCAR CIDADE
 async function searchCity() {
   const cityName = locationSearch.value;
 
@@ -75,6 +77,7 @@ async function searchCity() {
   }
 }
 
+//FUNÇÃO PARA MOSTRAR INFORMAÇÕES DO CLIMA
 function showInfos(json) {
   spinner.style.display = "none";
   mainInfo.style.display = "flex";
@@ -104,6 +107,7 @@ locationSearch.addEventListener("keydown", (e) => {
   }
 });
 
+//FUNÇÃO PARA EXIBIR MENSAGEM DE ERRO
 function showError(msg) {
   messageArea.style.display = "flex";
   messageArea.style.color = "#ff0000";
