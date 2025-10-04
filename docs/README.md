@@ -13,8 +13,8 @@
 
 ## 📖 Sobre o Projeto
 
-O **WeatherNow** é uma aplicação web desenvolvida com foco em **Mobile First**, totalmente **responsiva**, que permite consultar o **clima em tempo real** de qualquer cidade do mundo.  
-O projeto consome a **API OpenWeather**, exibindo dados como **temperatura, umidade, velocidade do vento e condição climática atual**.
+O **NimbusCast** é uma aplicação web desenvolvida com foco em **Mobile First**, totalmente **responsiva**, que permite consultar o **clima em tempo real** de qualquer cidade do mundo.  
+O projeto consome a **API OpenWeatherMap**, exibindo dados como **temperatura, umidade, velocidade do vento e condição climática atual**.
 
 ---
 
@@ -23,7 +23,7 @@ O projeto consome a **API OpenWeather**, exibindo dados como **temperatura, umid
 - **HTML5** → Estrutura da aplicação
 - **CSS3** → Estilos e design responsivo
 - **JavaScript (ES6)** → Lógica de busca e integração com a API
-- **OpenWeather API** → Fonte dos dados climáticos
+- **OpenWeatherMap API** → Fonte dos dados climáticos
 
 ---
 
@@ -55,7 +55,7 @@ O projeto consome a **API OpenWeather**, exibindo dados como **temperatura, umid
 
 ## ⚙️ Como Funciona
 
-O app consome dados da **OpenWeather API**, realizando uma requisição via `fetch()` e exibindo os resultados diretamente na interface, de forma rápida e intuitiva.
+O app consome dados da **OpenWeatherMap API**, realizando uma requisição via `fetch()` e exibindo os resultados diretamente na interface, de forma rápida e intuitiva.
 
 ---
 
