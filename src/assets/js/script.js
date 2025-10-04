@@ -1,4 +1,4 @@
-//VARIAVEIS DE BUSCA
+//CONSTANTES DE BUSCA
 const locationSearch = document.getElementById("locationSearch");
 const searchBtn = document.getElementById("searchBtn");
 
@@ -34,9 +34,7 @@ async function searchCity() {
   messageArea.style.color = "#0a0a0a";
 
   if (locationSearch.value === "" || !isNaN(locationSearch.value)) {
-    messageArea.style.display = "flex";
-    messageArea.style.color = "#ff0000";
-    messageArea.innerHTML = "<p>Digite um valor válido!</p>";
+    showError("DIGITE UM VALOR VÁLIDO!");
     return;
   }
 
@@ -66,18 +64,14 @@ async function searchCity() {
         windSpeed: json.wind.speed,
       });
     } else {
-      messageArea.style.display = "flex";
-      messageArea.style.color = "#ff0000";
-      messageArea.innerHTML = "<p>CIDADE NÃO ENCONTRADA!</p>";
+      showError("CIDADE NÃO ENCONTRADA!");
       loading.style.display = "none";
       return;
     }
   } catch (error) {
-    messageArea.style.display = "flex";
-    messageArea.style.color = "#ff0000";
-    messageArea.innerHTML = "<p>ERRO AO BUSCAR CIDADE!</p>";
-
+    showError("ERRO AO BUSCAR CIDADE!");
     console.log(error);
+    return;
   }
 }
 
@@ -97,7 +91,7 @@ function showInfos(json) {
   weatherTxt.innerHTML = `<h2>${json.temperature}°C</h2>
                             <p>${json.description}</p>`;
   weatherImg.src = `https://openweathermap.org/img/wn/${json.icon}@2x.png`;
-  weatherImg.alt = `Imagem sobre clima ${json.description}`;
+  weatherImg.alt = `Imagem sobre clima: ${json.description}`;
 
   otherInfoTxt.forEach((info, i) => {
     info.innerHTML = `<p>${otherInfosArray[i].value} ${otherInfosArray[i].unit}</p>`;
@@ -109,3 +103,9 @@ locationSearch.addEventListener("keydown", (e) => {
     searchCity();
   }
 });
+
+function showError(msg) {
+  messageArea.style.display = "flex";
+  messageArea.style.color = "#ff0000";
+  messageArea.innerHTML = `<p>${msg}</p>`;
+}
