@@ -98,9 +98,9 @@ const apiKey = "SUA_CHAVE_DA_API_AQUI";
 
 ### 🏁 4️⃣ Rodar o projeto no navegador
 
-1. Com a extensão "Live Server" clique com o botão sobre o arquivo index.html e clique em "Open With Live server ou aperte Alt + L Alt + O pelo teclado"
+1. Utilizando o VScode baixe a extensão "Live Server" em seguida clique com o botão sobre o arquivo index.html e clique em "Open With Live Server" ou aperte Alt + L Alt + O pelo teclado.
 
-2. Teste a aplicação
+2. Teste a aplicação!
 
 <p align="center">
   Feito por <b>Erick Campos</b>
