@@ -27,13 +27,6 @@ O projeto consome a **API OpenWeatherMap**, exibindo dados como **temperatura, u
 
 ---
 
-## 🚀 Deploy
-
-🔗 **Acesse o projeto online:**  
-👉 [https://seuusuario.github.io/weathernow/](https://seuusuario.github.io/weathernow/)
-
----
-
 ## 🧠 Funcionalidades
 
 ✅ Busca de cidades por nome  
@@ -70,6 +63,46 @@ Durante o desenvolvimento deste projeto, foram aprimorados conceitos de:
 
 ---
 
+## 🧰 Como Usar o Projeto
+
+Siga os passos abaixo para clonar, configurar a API Key da OpenWeatherMap e rodar o **NimbusCast** localmente 👇
+
+---
+
+### 🥇 1️⃣ Clonar o projeto na sua máquina
+
+Abra o terminal e execute:
+
+```bash
+git clone https://github.com/Erick-CamposDev/NimbusCast.git
+```
+
+### 🥈 2️⃣ Criar conta na OpenWeatherMap e gerar uma API Key
+
+1. Acesse o site oficial da OpenWeatherMap: [https://openweathermap.org/](https://openweathermap.org/)
+2. Clique em **Sign Up** e crie uma conta gratuita.
+3. Após fazer login, vá até o menu **API Keys** no seu painel de usuário.
+4. Clique em **Generate Key** (ou **Create Key**) para gerar sua chave pessoal.
+5. Copie a chave gerada
+
+### 🥉 3️⃣ Colocar a API Key no arquivo `script.js`
+
+1. Abra o arquivo principal de JavaScript do projeto (`script.js`).
+2. Localize a variável onde a API Key deve ser inserida, por exemplo:
+
+```js
+const apiKey = "SUA_CHAVE_DA_API_AQUI";
+```
+
+3. Substitua o placeholder pela chave copiada
+
+### 🏁 4️⃣ Rodar o projeto no navegador
+
+1. Com a extensão "Live Server" clique com o botão sobre o arquivo index.html e clique em "Open With Live server ou aperte Alt + L Alt + O pelo teclado"
+
+2. Teste a aplicação
+
 <p align="center">
   Feito por <b>Erick Campos</b>
 </p>
+```

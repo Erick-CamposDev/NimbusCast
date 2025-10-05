@@ -42,7 +42,8 @@ async function searchCity() {
 
   loadingCity();
 
-  const apiKey = "4c2757e20f7ff4a2dae4fdd1c795af39";
+  //CHAVE DE API
+  const apiKey = "SUA_CHAVE_DA_API_AQUI";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(
     cityName
   )}&appid=${apiKey}&units=metric&lang=pt_br`;
