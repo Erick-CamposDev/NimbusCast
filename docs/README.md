@@ -83,7 +83,7 @@ git clone https://github.com/Erick-CamposDev/NimbusCast.git
 2. Clique em **Sign Up** e crie uma conta gratuita.
 3. Após fazer login, vá até o menu **API Keys** no seu painel de usuário.
 4. Clique em **Generate Key** (ou **Create Key**) para gerar sua chave pessoal.
-5. Copie a chave gerada
+5. Copie a chave gerada.
 
 ### 🥉 3️⃣ Colocar a API Key no arquivo `script.js`
 
@@ -102,7 +102,9 @@ const apiKey = "SUA_CHAVE_DA_API_AQUI";
 
 2. Teste a aplicação!
 
+---
+
 <p align="center">
   Feito por <b>Erick Campos</b>
 </p>
-```
+
